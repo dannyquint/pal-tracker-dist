@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.pivotal.pal.tracker.projects.ProjectControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-26T14:10:40" hostname="ip-172-31-80-12" time="0.09">
+  <properties/>
+  <testcase name="testGet_WithNull" classname="test.pivotal.pal.tracker.projects.ProjectControllerTest" time="0.052"/>
+  <testcase name="testGet" classname="test.pivotal.pal.tracker.projects.ProjectControllerTest" time="0.002"/>
+  <testcase name="testList" classname="test.pivotal.pal.tracker.projects.ProjectControllerTest" time="0.016"/>
+  <testcase name="testCreate" classname="test.pivotal.pal.tracker.projects.ProjectControllerTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.pivotal.pal.tracker.registration.RegistrationAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-26T14:10:23" hostname="ip-172-31-80-12" time="4.892">
+  <properties/>
+  <testcase name="embedded" classname="test.pivotal.pal.tracker.registration.RegistrationAppTest" time="4.892"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+2020-06-26 14:10:24.712  INFO 18445 --- [    Test worker] io.pivotal.pal.tracker.registration.App  : Starting App on ip-172-31-80-12 with PID 18445 (started by ubuntu in /home/ubuntu/workspace/pal-tracker-dist/applications/registration-server)
+2020-06-26 14:10:24.717  INFO 18445 --- [    Test worker] io.pivotal.pal.tracker.registration.App  : No active profile set, falling back to default profiles: default
+2020-06-26 14:10:24.781  INFO 18445 --- [    Test worker] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8dd561a: startup date [Fri Jun 26 14:10:24 UTC 2020]; root of context hierarchy
+2020-06-26 14:10:26.755  INFO 18445 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2020-06-26 14:10:26.795  INFO 18445 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-26 14:10:26.795  INFO 18445 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2020-06-26 14:10:26.809  INFO 18445 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2020-06-26 14:10:26.950  INFO 18445 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-26 14:10:26.951  INFO 18445 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2181 ms
+2020-06-26 14:10:27.024  INFO 18445 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-06-26 14:10:27.030  INFO 18445 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-26 14:10:27.030  INFO 18445 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-26 14:10:27.031  INFO 18445 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-26 14:10:27.031  INFO 18445 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-26 14:10:27.447  INFO 18445 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-26 14:10:27.606  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8dd561a: startup date [Fri Jun 26 14:10:24 UTC 2020]; root of context hierarchy
+2020-06-26 14:10:27.706  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/registration],methods=[POST]}" onto public io.pivotal.pal.tracker.users.UserInfo io.pivotal.pal.tracker.accounts.RegistrationController.create(io.pivotal.pal.tracker.accounts.RegistrationForm)
+2020-06-26 14:10:27.715  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/accounts],methods=[GET]}" onto public java.util.List<io.pivotal.pal.tracker.accounts.AccountInfo> io.pivotal.pal.tracker.accounts.AccountController.list(long)
+2020-06-26 14:10:27.717  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String io.pivotal.pal.tracker.restsupport.SpringDefaultController.defaultRoute()
+2020-06-26 14:10:27.721  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{projectId}],methods=[GET]}" onto public io.pivotal.pal.tracker.projects.ProjectInfo io.pivotal.pal.tracker.projects.ProjectController.get(long)
+2020-06-26 14:10:27.723  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects],methods=[GET]}" onto public java.util.List<io.pivotal.pal.tracker.projects.ProjectInfo> io.pivotal.pal.tracker.projects.ProjectController.list(long)
+2020-06-26 14:10:27.724  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects],methods=[POST]}" onto public org.springframework.http.ResponseEntity<io.pivotal.pal.tracker.projects.ProjectInfo> io.pivotal.pal.tracker.projects.ProjectController.create(io.pivotal.pal.tracker.projects.ProjectForm)
+2020-06-26 14:10:27.726  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{userId}],methods=[GET]}" onto public io.pivotal.pal.tracker.users.UserInfo io.pivotal.pal.tracker.users.UserController.show(long)
+2020-06-26 14:10:27.736  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-26 14:10:27.737  INFO 18445 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-26 14:10:27.773  INFO 18445 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-26 14:10:27.773  INFO 18445 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-26 14:10:28.202  INFO 18445 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-06-26 14:10:28.205  INFO 18445 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-06-26 14:10:28.211  INFO 18445 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-06-26 14:10:28.259  INFO 18445 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2020-06-26 14:10:28.267  INFO 18445 --- [    Test worker] io.pivotal.pal.tracker.registration.App  : Started App in 4.031 seconds (JVM running for 4.807)
+2020-06-26 14:10:28.376  INFO 18445 --- [nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-06-26 14:10:28.377  INFO 18445 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-06-26 14:10:28.395  INFO 18445 --- [nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-06-26 14:10:28.457  INFO 18445 --- [nio-8181-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-26 14:10:28.463  WARN 18445 --- [nio-8181-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-06-26 14:10:28.630  INFO 18445 --- [nio-8181-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>
