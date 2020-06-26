@@ -1,0 +1,12 @@
+.gradle
+build
+.idea
+*.iml
+*.ipr
+*.iws
+*.class
+*.xml
+components/*/build/*
+.DS_Store
+.env
+ci/variables.yml
